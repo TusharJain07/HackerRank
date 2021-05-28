@@ -1,0 +1,6 @@
+SET @ROW=21;
+
+SELECT REPEAT("* ", @ROW:= @ROW-1) FROM INFORMATION_SCHEMA.TABLES;
+
+/*INFORMATION_SCHEMA provides access to database metadata, information about the MySQL server
+such as the name of a database or table, the data type of a column, or access privileges.*/
